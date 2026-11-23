@@ -84,7 +84,7 @@ powershell -ExecutionPolicy Bypass -File scripts/install.ps1 -Uninstall
 | --- | --- |
 | 文案 | `dist/startup-anim.html` 里的 `TITLES`（六个大标题）、`STEP_CAP`（底部中英说明） |
 | 时序 | 同文件里的 `TL`（各步骤起止与 `mit` / `end` 时刻） |
-| 链接 | 同文件 `.url` 那一行（默认 `github.com/OWNER/dsh-startup-screen`） |
+| 链接 | 同文件 `.url` 那一行（默认 `github.com/931823152sth-ai/dsh-startup-screen`） |
 | 配乐 | 直接替换 `dist/score.mp3` |
 | 标志 | 同文件里所有 `viewBox="0 0 50 50"` 的 `<path d="...">` |
 
