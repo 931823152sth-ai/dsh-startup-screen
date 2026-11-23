@@ -1,0 +1,6 @@
+# dsh bundle layer: mount the local startup-screen plugin. The host half is
+# a no-op; the browser half renders the boot animation overlay once per
+# session, before the workspace UI is usable.
+- insert:
+    - id: startup-screen
+      name: 'dsh-startup-screen'

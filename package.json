@@ -1,0 +1,50 @@
+{
+  "name": "dsh-startup-screen",
+  "version": "1.0.0",
+  "description": "Sci-fi HUD boot animation for DeepSeek Harness: plays full-screen once per session.",
+  "type": "module",
+  "exports": {
+    ".": "./dsh/index.js",
+    "./client": "./dsh/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OWNER/dsh-startup-screen.git"
+  },
+  "homepage": "https://github.com/OWNER/dsh-startup-screen",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "startup-screen",
+    "boot-animation",
+    "splash",
+    "plugin"
+  ],
+  "files": [
+    "dsh",
+    "cordis.patch.yml",
+    "dist",
+    "scripts",
+    "build.py",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "python build.py"
+  },
+  "engines": {
+    "dsh": ">=0.1.7"
+  }
+}
